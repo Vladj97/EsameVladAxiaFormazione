@@ -1,0 +1,132 @@
+body {
+    margin: 0px;
+    font-family: "SoDo Sans SemiBold", Helvetica Neue, Helvetica, Arial,
+        sans-serif;
+}
+
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    font-size: 20px; 
+    position: relative;
+    padding-left: 5px;
+}
+
+.search-wrapper label {
+    margin-right: 10px;
+}
+
+.search-wrapper input[type="search"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px #937DB7;
+    width: 200px; /* Adjust the width as needed */
+}
+
+
+.navbar-container {
+    box-shadow: 0px 4px 5px 0px #937DB7;
+    -webkit-box-shadow: 0px 4px 5px 0px #7A5FBA;
+    -moz-box-shadow: 0px 4px 5px 0px #6142BD;
+}
+
+
+.navbar-left div {
+    font-size: 24px;
+    
+}
+
+.navbar-left div {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+.navbar-left,
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left>*,
+.navbar-right>* {
+    margin: 10px;
+}
+
+/* Stile per la lista delle birre */
+.listaLibri {
+    width: auto;
+    height: auto; /* Altezza automatica */
+    position: relative;
+    padding: 20px;
+    background-image: url('./assets/xxx.avif');
+    background-size: 60% auto; /* Imposta la larghezza al 100% dell'elemento e l'altezza automaticamente */
+    background-repeat: no-repeat; /* Per evitare la ripetizione dell'immagine */
+    background-color: #6280bf;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 10px;
+    background-position: right bottom; /* Centra l'immagine */
+}
+
+
+/* Stile per ogni singola birra nella lista */
+.listaLibri {
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query per impostare l'altezza fissa solo quando la finestra è più ampia di 1102x878 */
+@media screen and (min-width: 1102px) and (min-height: 878px) {
+    .listaLibri {
+        height: 700px; /* Altezza fissa quando la finestra è più ampia di 1102x878 */
+    }
+    
+}
+@media screen and (min-width: 1102px) and (min-height: 878px) {
+    .immagineSopra {
+        display: block; /* Mostra l'elemento .immagineSopra quando le condizioni sono soddisfatte */
+    }
+}
+
+
+/* Stile per i bottoni di paginazione */
+#paginazione {
+    text-align: center; /* Centra il contenuto orizzontalmente */
+    margin-bottom: 2px;
+    
+}
+
+#paginaPrecedente,
+#paginaSuccessiva {
+    padding: 5px 10px; /* Spazio interno per i bottoni */
+    background-color: #937DB7; /* Colore di sfondo */
+    color: #fff; /* Colore del testo */
+    border: none; /* Rimuovi il bordo */
+    border-radius: 3px; /* Bordi arrotondati */
+    cursor: pointer; /* Cambia il cursore quando si passa sopra il pulsante */
+}
+
+#paginaPrecedente:hover,
+#paginaSuccessiva:hover {
+    background-color: #6142BD; /* Colore di sfondo al passaggio del mouse */
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #7A5FBA;
+    color: #fff;
+    position: bottom;
+    bottom: 0;
+    width: auto;
+    z-index: 1; /* Imposta un valore di z-index per posizionare il footer al di sotto degli altri elementi */
+}
